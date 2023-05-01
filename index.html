@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>formulario</title>
+        <link rel="stylesheet" href="index.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,800&display=swap"
+            rel="stylesheet"
+        />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <form>
+                <div class="data-container">
+                    <div class="day-container">
+                        <label class="label-day" for="day">DAY</label>
+                        <input
+                            type="text"
+                            id="day"
+                            placeholder="DD"
+                            maxlength="2"
+                            minlength="2"
+                        />
+                        <span class="error-input"></span>
+                    </div>
+                    <div class="month-container">
+                        <label class="label-month" for="month">MONTH</label>
+                        <input
+                            type="text"
+                            id="month"
+                            placeholder="MM"
+                            maxlength="2"
+                            minlength="1"
+                        />
+                        <span class="error-input"></span>
+                    </div>
+                    <div>
+                        <label for="year" class="label-year">YEAR</label>
+                        <input
+                            type="text"
+                            id="year"
+                            placeholder="YYYY"
+                            maxlength="4"
+                            minlength="4"
+                        />
+                        <span class="none"></span>
+                    </div>
+                </div>
+                <button>
+                    <img src="assets/images/icone.svg" alt="" />
+                </button>
+            </form>
+
+            <section class="inf-container">
+                <div>
+                    <p><span id="year-calc">- - </span>years</p>
+                </div>
+                <div>
+                    <p><span id="months-calc">- - </span>months</p>
+                </div>
+                <div>
+                    <p><span id="days-calc">- - </span>days</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
