@@ -195,4 +195,7 @@ input::placeholder {
     p {
         font-size: 1.875rem;
     }
+     button {
+        transform: translateX(-120px);
+    }
 }
