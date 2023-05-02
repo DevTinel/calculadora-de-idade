@@ -191,3 +191,8 @@ input::placeholder {
         width: 90%;
     }
 }
+@media (max-width: 382px) {
+    p {
+        font-size: 1.875rem;
+    }
+}
